@@ -82,7 +82,7 @@
 		•	Monitor for data drift, retrain the model as needed, and update the model as new data becomes available.
 	
 # Home-Work
-### Homework Assignment : Exploratory Data Analysis (EDA) with the Iris Dataset
+### Assignment 1 : Exploratory Data Analysis (EDA) with the Iris Dataset
 
 	The Iris dataset is a classic dataset for data analysis and machine learning. It includes 150 observations of iris flowers with four features: sepal length, sepal width, petal length, and petal width, along with the species of the flower.
 	
@@ -96,53 +96,71 @@
 	6. Create a pair plot to visualize the relationships between all features.
 	7. Create a correlation matrix heatmap.
 
+### Assignment 2: Exploratory Data Analysis (EDA) with the Tips Dataset
+	The Tips dataset is commonly used for demonstrating data analysis techniques. It contains information about tips given in a restaurant, including the total bill, tip amount, sex of the bill payer, whether they were a smoker, day of the week, time of day, and size of the party.
+	
+	**Assignment Questions:**
+	
+	1. Load the Tips dataset and display the first few rows.
+	2. Display summary statistics of the dataset.
+	3. Create histograms for numeric features.
+	4. Create box plots to show the distribution of numeric features.
+	5. Create scatter plots to show relationships between pairs of numeric features.
+	6. Create a pair plot to visualize the relationships between all numeric features.
+	7. Create a correlation matrix heatmap.
+	8. Create a bar plot to show the average tip amount by day of the week.
+	9. Create a violin plot to show the distribution of total bill amounts by time of day (Lunch/Dinner).
+	10. Create a box plot to compare tips given by smokers vs non-smokers.
+
+ 
 # Sample dataset
- Ex 1:
-	data = {
-    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
-    'Age': [24, 27, 22, 32],
-    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
-}
-
-	Ex 2:
-	data = [
-    {'Name': 'Alice', 'Age': 24, 'City': 'New York'},
-    {'Name': 'Bob', 'Age': 27, 'City': 'Los Angeles'},
-    {'Name': 'Charlie', 'Age': 22, 'City': 'Chicago'},
-    {'Name': 'David', 'Age': 32, 'City': 'Houston'}
-]
-
-	Ex3:
-	df1 = pd.DataFrame({
-    'A': ['A0', 'A1', 'A2', 'A3'],
-    'B': ['B0', 'B1', 'B2', 'B3'],
-    'key': ['K0', 'K1', 'K2', 'K3']
-})
-
-df2 = pd.DataFrame({
-    'C': ['C0', 'C1', 'C2', 'C3'],
-    'D': ['D0', 'D1', 'D2', 'D3'],
-    'key': ['K0', 'K1', 'K2', 'K3']
-})
-
-	Ex 4:
-	df1 = pd.DataFrame({
-		'A': ['A0', 'A1', 'A2'],
-		'B': ['B0', 'B1', 'B2']
-	}, index=['K0', 'K1', 'K2'])
-
+	 Ex 1:
+		data = {
+	    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+	    'Age': [24, 27, 22, 32],
+	    'City': ['New York', 'Los Angeles', 'Chicago', 'Houston']
+	}
+	
+		Ex 2:
+		data = [
+	    {'Name': 'Alice', 'Age': 24, 'City': 'New York'},
+	    {'Name': 'Bob', 'Age': 27, 'City': 'Los Angeles'},
+	    {'Name': 'Charlie', 'Age': 22, 'City': 'Chicago'},
+	    {'Name': 'David', 'Age': 32, 'City': 'Houston'}
+	]
+	
+		Ex3:
+		df1 = pd.DataFrame({
+	    'A': ['A0', 'A1', 'A2', 'A3'],
+	    'B': ['B0', 'B1', 'B2', 'B3'],
+	    'key': ['K0', 'K1', 'K2', 'K3']
+	})
+	
 	df2 = pd.DataFrame({
-		'C': ['C0', 'C1', 'C2'],
-		'D': ['D0', 'D1', 'D2']
-	}, index=['K0', 'K2', 'K3'])
+	    'C': ['C0', 'C1', 'C2', 'C3'],
+	    'D': ['D0', 'D1', 'D2', 'D3'],
+	    'key': ['K0', 'K1', 'K2', 'K3']
+	})
 	
-	Ex 5:
-	df = pd.DataFrame({
-    'Category': ['A', 'A', 'B', 'B', 'C'],
-    'Values': [1, 2, 3, 4, 5]
+		Ex 4:
+		df1 = pd.DataFrame({
+			'A': ['A0', 'A1', 'A2'],
+			'B': ['B0', 'B1', 'B2']
+		}, index=['K0', 'K1', 'K2'])
 	
+		df2 = pd.DataFrame({
+			'C': ['C0', 'C1', 'C2'],
+			'D': ['D0', 'D1', 'D2']
+		}, index=['K0', 'K2', 'K3'])
+		
+		Ex 5:
+		df = pd.DataFrame({
+	    'Category': ['A', 'A', 'B', 'B', 'C'],
+	    'Values': [1, 2, 3, 4, 5]
+		
 	
 # Interview Questions:
+
 	1. Explain the need for Machine Learning.
 	2. Explain the challenges or limitations of Machine Learning
 	3. Explain why Machine Learning is so popular.

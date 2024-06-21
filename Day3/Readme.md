@@ -14,3 +14,14 @@
         'city': ['New York', 'Los Angeles', 'New York', 'Chicago', 'Los Angeles', 'Chicago', 'Chicago', 'New York', 'Los Angeles', 'Chicago', 'New York', 'Los Angeles', 'Chicago', 'Los Angeles', 'New York'],
         'bought': ['Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes']
     }
+
+# Ex 3:
+    data = {
+    'age': [25, 30, 35, np.nan, 45, 50, 55, 60, np.nan, 70, 75, 80, 85, 90, np.nan],
+    'height_cm': [170, 165, 180, 175, np.nan, 160, 155, 150, 165, np.nan, 175, 180, 170, 160, 155],
+    'weight_kg': [65, 70, 75, 80, 85, np.nan, 95, 100, 105, 110, 115, np.nan, 85, 70, 65],
+    'gender': ['Male', 'Female', np.nan, 'Female', 'Male', 'Female', 'Male', np.nan, 'Female', 'Male', 'Female', 'Male', 'Female', np.nan, 'Female'],
+    'activity_level': ['High', 'Medium', 'Low', 'Medium', 'High', 'Low', np.nan, 'High', 'Medium', 'Low', 'Medium', 'High', 'Low', 'Medium', np.nan],
+    'diet': ['Vegetarian', 'Non-Vegetarian', 'Vegan', 'Vegetarian', np.nan, 'Non-Vegetarian', 'Vegan', 'Vegetarian', 'Non-Vegetarian', 'Vegan', np.nan, 'Vegetarian', 'Non-Vegetarian', 'Vegan', 'Vegetarian'],
+    'target': ['Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes']
+}

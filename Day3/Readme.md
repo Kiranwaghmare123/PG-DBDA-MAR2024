@@ -25,3 +25,16 @@
     'diet': ['Vegetarian', 'Non-Vegetarian', 'Vegan', 'Vegetarian', np.nan, 'Non-Vegetarian', 'Vegan', 'Vegetarian', 'Non-Vegetarian', 'Vegan', np.nan, 'Vegetarian', 'Non-Vegetarian', 'Vegan', 'Vegetarian'],
     'target': ['Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes', 'No', 'Yes']
 }
+
+# Ex 4:
+
+    Ex: data = {
+    'client_id': [46109, 46109, 46109],
+    'loan_type': ['home', 'credit', 'home'],
+    'loan_amount': [13672, 9794, 12734],
+    'repaid': [0, 0, 1],
+    'loan_id': [10243, 10984, 10990],
+    'loan_start': ['2002-04-16', '2003-10-21', '2006-02-01'],
+    'loan_end': ['2003-12-20', '2005-07-17', '2007-07-05'],
+    'rate': [2.15, 1.25, 0.68]
+    }

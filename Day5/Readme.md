@@ -13,4 +13,6 @@
         'salary': [50000, 60000, 80000, 110000, 150000, 200000, 250000, 300000]
     }
 
-#Ex 3:
+# Ex 3: Optimization parameter value
+    parameters={'alpha' : [1,5,10,20,35,45,50,55,60,75,80,95,100]}
+    use GridSearch()

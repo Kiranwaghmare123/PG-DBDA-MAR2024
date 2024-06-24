@@ -16,3 +16,9 @@
 # Ex 3: Optimization parameter value
     parameters={'alpha' : [1,5,10,20,35,45,50,55,60,75,80,95,100]}
     use GridSearch()
+    
+# Ex 4:
+
+    np.random.seed(0)
+    X = 6 * np.random.rand(100, 1) - 3
+    y = 0.5 * X**2 + 1.5 * X + 2 + np.random.randn(100, 1)

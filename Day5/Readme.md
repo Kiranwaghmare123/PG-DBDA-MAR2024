@@ -26,28 +26,28 @@
 
 # Solution: Those who are not able to get coefficients, follow the given code:
 
-''' python
-df = pd.read_csv('BostonHousing.csv')
-df
-
-X = df.drop('medv', axis=1).values
-y = df['medv'].values
-
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(X)
-
-X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=0)
-
-lr = LinearRegression()
-lr.fit(X_train, y_train)
-y_pred_lr = lr.predict(X_test)
-mse_lr = mean_squared_error(y_test, y_pred_lr)
-r2_lr = r2_score(y_test, y_pred_lr)
-coeff_lr = lr.coef_
-coeff_lr
-
-coefficients = pd.Series(coeff_lr, index=df.columns[:-1])
-coefficients
-
-coefficients.plot(kind='bar')
-'''
+    ''' python
+    df = pd.read_csv('BostonHousing.csv')
+    df
+    
+    X = df.drop('medv', axis=1).values
+    y = df['medv'].values
+    
+    scaler = StandardScaler()
+    X_scaled = scaler.fit_transform(X)
+    
+    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=0)
+    
+    lr = LinearRegression()
+    lr.fit(X_train, y_train)
+    y_pred_lr = lr.predict(X_test)
+    mse_lr = mean_squared_error(y_test, y_pred_lr)
+    r2_lr = r2_score(y_test, y_pred_lr)
+    coeff_lr = lr.coef_
+    coeff_lr
+    
+    coefficients = pd.Series(coeff_lr, index=df.columns[:-1])
+    coefficients
+    
+    coefficients.plot(kind='bar')
+    '''

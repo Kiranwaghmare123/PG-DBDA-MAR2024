@@ -14,7 +14,7 @@
 	-Logistic Regression
 	
 # Regression Analysis:
- -------------------
+
      -statistical analysis method to model the relationship between IV(X) (one  or more) and  DV(Y)
      -understand how the DV changes as per the changes in IV-Key feature: helps to find coorelation between variable to predict continuous outcomes.
      -Applications: Prediction, forcasting , time series, cause -effect relationship
@@ -26,13 +26,13 @@
     	 -Overfitting:Model performs well on training dataset but poorly perform on testing dataset.
 	 
 # Types of Regression:
----------------------
+
     1.SLR
     2.MLR
     3.Polynomial REgression
 
 # Model performance:
-------------------
+
     Best fit Line: Determine how well the regression line fits the observation.
     -R-square 
     	-Measure the strength of the relationhip between dependent and independent variable,
@@ -40,8 +40,8 @@
     	-also called it as the coefficient of determination.
 	
 	
-# Assumptions of Linear REgression:
---------------------------------
+# Assumptions of Linear Regression:
+
     -Linear Relationship:
     -No multicolliniarity
     -No Homoscedacity: Assumes that the error term is the same  for all the values of the independent variable.
@@ -49,26 +49,26 @@
     -No Autocorrelation:Asuumes no correlation in error terms.It will reduce model accuracy.
 	
 # Overfitting:
-------------
+
 	-phenomenon that occurs when a machine learning model is conatrained to the training set and not able to perform well on unseen data.
 	-when model learns the noise in the training data as well, cases will be remembered by the training data set.
 	-Result: Training accuracy increase, Testing accuracy decreases.
 	
 
 # Underfitting:
-------------- 
+
 	-phenomenon that occurs when a machine learning model is notable to learn even the basic patterns available in the dataset.
 	-such model is unable to perform well even ontraining dataset.
 	-Result: Training and Testing accuracy decreases.
 	
 	
 # Bias:
------ 
+
 	-refers to the error which occurs when we try to fit perfectly.
 	-data fit will be high bias, where is unable to learn the patterns in the data and hence perform poorly.
 	
 # Variance:
----------
+
 	-refers to the error which occurs when we try to make predictions using the unseen data.
 	-data fit with high variance, where model learn noise that present in the data.
 
@@ -76,11 +76,32 @@
 ![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/19ededea-22ed-446d-93d2-eae8aa7e1f2a)
 
 # Regularization:
----------------
+
 	- technique used to reduce errors by fitting the function appropriately on the given training set & avoiding overfitting.
 
+# Regularization Techniques:
+	
+	1. Lasso Regularization (L1)
+	-Add abosolute value of coefficients as penalty.
+	
+	2.Ridge Regularization (L2)
+	-Add square magnitude of coefficients as penalty.
+	
+	3.Elastic Net Regularization:
+	-Combination of L1 and L2 regularization, with a hyperparameter to control the ratio.
+
+
+# Advantages:
+
+	-improves generalization by reducing overfitting.
+	-Simplifies models and improves interpretability.
+	-Handles outlier and irrelevant features effectively.
+	-Ensures stable model performance across different datasets.
+	-Controls model complexity, especially useful in limited data scenarios.
+	-Fine-tunes hyperparameters for optimal bias-variance tradeoff.
+
 # Interview Questions
----------------------
+
     1. What are the different types of regression.
     2. Is regression a supervised learning? Why?
     3. Explain the ordinary least squares method for regression.
@@ -89,7 +110,7 @@
     6. What does the line of regression tell you?
 
 # Problem statement:
-----------------------
+
 ### Machine Learning Problem Statement: Iris Flower Species Prediction using Linear Regression
 
     ### Objective:

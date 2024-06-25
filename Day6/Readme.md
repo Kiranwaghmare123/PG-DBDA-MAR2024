@@ -113,25 +113,25 @@
 
 ### Machine Learning Problem Statement: Iris Flower Species Prediction using Linear Regression
 
-    ### Objective:
+    # Objective:
         Develop a machine learning model to analyze the Iris dataset and predict the species of iris flowers based on various features. The model should utilize linear regression and explore the suitability of different types of regression for this classification task.
 
-    ### Dataset:
+    # Dataset:
         The Iris dataset consists of measurements for three species of iris flowers (setosa, versicolor, and virginica). The features include sepal length, sepal width, petal length, and petal width.
     
-    ## Tasks:
+    # Tasks:
     
-    ### Data Exploration:
+    # Data Exploration:
     
         Explore the dataset to understand the distribution of features.
         Visualize the relationships between different features.
   
-    ## Data Preprocessing:
+    # Data Preprocessing:
     
         Check for missing values and outliers.
         Ensure that the data is suitable for linear regression (numeric features, linear relationships).
     
-    ## Feature Selection:
+    # Feature Selection:
     
         Choose relevant features for predicting iris species.
         Consider feature scaling if necessary.
@@ -146,28 +146,28 @@
         Explore different types of regression models to compare their performance with linear regression.
         Select the most suitable regression model for the Iris species prediction task.
         
-    ###  Hyperparameter Tuning:
+    #  Hyperparameter Tuning:
     
         Optimize hyperparameters for the selected regression model to improve performance.
     
-    ### Evaluation Metrics:
+    # Evaluation Metrics:
     
         Utilize appropriate metrics for evaluating regression models, considering the nature of the task.
         
-    ### Result Analysis:
+    # Result Analysis:
     
         Analyze the model's predictions to understand how well it generalizes to new data.
         Interpret the coefficients and their significance in the linear regression model.
     
-    ### Visualization (Optional):
+    # Visualization (Optional):
     
         Optionally, visualize the regression line and scatter plots to better understand the relationships between features and species.
     
-    ### Deployment (Optional):
+    # Deployment (Optional):
     
         If applicable, deploy the trained regression model for making predictions on new data.
 
-    ### Monitoring and Updating (Optional):
+    #Monitoring and Updating (Optional):
     
         If deployed, establish a system for monitoring the model's performance over time.
         Plan for model updates or retraining based on new data.

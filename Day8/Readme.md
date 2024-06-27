@@ -17,6 +17,40 @@
     plt.legend()
     plt.show()
 
+# Accuracy Rate:
+
+    accuracy_rate = []
+    for i in range(1,40):
+        
+        knn = KNeighborsClassifier(n_neighbors=i)
+        score=cross_val_score(knn,df_feat,df['TARGET CLASS'],cv=10)
+        accuracy_rate.append(score.mean())
+
+# Error Rate:
+        error_rate = []
+        
+        for i in range(1,40):
+            knn = KNeighborsClassifier(n_neighbors=i)
+            score=cross_val_score(knn,df_feat,df['TARGET CLASS'],cv=10)
+            error_rate.append(1-score.mean())
+
+        error_rate = []
+        
+        # Will take some time
+        for i in range(1,40):
+            
+            knn = KNeighborsClassifier(n_neighbors=i)
+            knn.fit(X_train,y_train)
+            pred_i = knn.predict(X_test)
+            error_rate.append(np.mean(pred_i != y_test))
+        plt.figure(figsize=(10,6))
+        #plt.plot(range(1,40),error_rate,color='blue', linestyle='dashed', marker='o',
+          #       markerfacecolor='red', markersize=10)
+        plt.plot(range(1,40),accuracy_rate,color='blue', linestyle='dashed', marker='o',
+                 markerfacecolor='red', markersize=10)
+        plt.title('Error Rate vs. K Value')
+        plt.xlabel('K')
+        plt.ylabel('Error Rate')
 
 # Ex 1:
     weather=['Sunny','Sunny','Overcast','Rainy','Rainy','Rainy','Overcast','Sunny','Sunny',

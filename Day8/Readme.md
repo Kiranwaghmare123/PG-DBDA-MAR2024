@@ -247,7 +247,7 @@ Steps:
     
     play=['No','No','Yes','Yes','Yes','No','Yes','No','Yes','Yes','Yes','Yes','Yes','No']
 
-# Ex 2: Write a program to identify the a person is defaulter or not
+# Ex 2: Write a program to identify a person is defaulter or not
 	Home 	Owner		Marital Status	Defaulted Borrower
 	Yes	Single		$125,000	No
 	No	Married		$100,000	No

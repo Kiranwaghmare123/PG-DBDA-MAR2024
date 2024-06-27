@@ -3,7 +3,7 @@
 ## Date: 27/06/2024
 
 
-Parametric and Nn-Parametric Methods:
+Parametric and Non-Parametric Methods:
 --------------------------------------
 
 	Parametric Methods:
@@ -246,3 +246,16 @@ Steps:
     temp=['Hot','Hot','Hot','Mild','Cool','Cool','Cool','Mild','Cool','Mild','Mild','Mild','Hot','Mild']
     
     play=['No','No','Yes','Yes','Yes','No','Yes','No','Yes','Yes','Yes','Yes','Yes','No']
+
+# Ex 2: Write a program to identify the a person is defaulter or not
+	Home 	Owner		Marital Status	Defaulted Borrower
+	Yes	Single		$125,000	No
+	No	Married		$100,000	No
+	No	Single		$70,000		No
+	Yes	Married		$120,000	No
+	No	Divorced	$95,000		Yes
+	No	Married		$60,000		No
+	Yes	Divorced	$220,000	No
+	No	Single		$85,000		Yes
+	No	Married		$75,000		No
+	No	Single		$90,000		Yes

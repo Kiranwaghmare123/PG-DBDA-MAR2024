@@ -77,13 +77,13 @@ Naive Bayes:
 Types of Naive Bayes Model:
 ----------------------------
 	1. Gaussian Naive Bayes Classier:
-	![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/5ae1a805-5005-4d84-8606-509a00e7c798)
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/5ae1a805-5005-4d84-8606-509a00e7c798)
 
 	2.Bernoulli Naive Bayes Classifier:
-	![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/b8c69b64-862a-4b8b-bf5a-abc07b0444be)
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/b8c69b64-862a-4b8b-bf5a-abc07b0444be)
 
 	3.Multinominal Naive Bayes Classifier
- 	![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/f4ab828b-e6cc-4cf8-82af-d3d384581e78)
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/f4ab828b-e6cc-4cf8-82af-d3d384581e78)
 
 
 #Reference: Tutorial for Naive Bayes

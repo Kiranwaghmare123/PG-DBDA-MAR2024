@@ -1,3 +1,70 @@
+# Day 9: SVM Algorithm
+=================================================
+# Date: 28/06/2024
+# Topics:
+------------------
+       -Linear SVM
+       -Kernel SVM
+
+
+# Support Vector Machine:
+-----------------------
+       -SVM : supervised learning model used for classification and regression analysis.
+       -defines a separating hyperplane for discriminative classification.
+       
+       -Representation: Data points in feature space mapped so that separate categories are divided by a decision boundray and marginal line.
+       
+       -Linear classification: SVM performs linear classification by finding an optimal hyperplane.
+       
+       -Non-linear classification:SVM can efficiently handle non-linear classification by implicitly mapping inputs into high dimensional feature space.
+       
+       -SVM identifies the optimal hyperplane that separates different classes in the training data.
+       
+       -Maximum Margin:The SVM algorithm maximizes the margin between the closest data point of differnt classes called as support vector.
+       
+       -SVM uses kernel functions to transform non-linearly separable data into higher dimensional spaces where it can be linearly separable.
+       
+       -SVM is capable of managing outliers by allowing soft margins, which introduce a penalty for misclassified points.
+
+
+# Terminologies:
+---------------
+       1. Support vector:
+       -points that are closest to the hyperplane.
+       
+       2.Margin:
+       -The distance between the hyperplane and observation closest to the hyperplane.
+       
+       3.Hyperplane:
+       -The decision boundary i.e., used to separate the data points of different classes in the feature space.
+       
+       4.Hard margin:
+       -Maximum margin of hyperplane which separates the data points without any misclassification.
+       
+       5.Soft margin:
+       -Data points are not perfectly separable.
+       -Data points include slack variable for the formation of soft margin.
+       
+       6.C :Margin maximization and misclassification
+
+ 
+# Types of SVM:
+--------------
+       1. Linear SVM:
+       -uses a linear decision boundary to separate data points, suitable for linearly separable data.
+       
+       2.Non-linear SVM:
+       -uses kernel function to handle nonlinearly separable data by mapping it into higher dimensional space.
+
+# Common Kernel functions:
+-------------------------
+       -Linear kernel 
+       -Polynomial kernel
+       -Gaussian RBF kernel
+       -Sigmoid kernel
+       
+
+
 # Helper function to plot decision boundaries
        def plot_decision_boundary(X, y, model):
         h = .02  # step size in the mesh

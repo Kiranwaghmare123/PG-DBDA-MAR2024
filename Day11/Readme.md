@@ -13,3 +13,21 @@
                 mark p as noise
         }
     }
+
+
+### Visualize the cluster
+    y_means = db.fit_predict(X)
+    plt.figure(figsize=(7,5))
+    plt.scatter(X[y_means == 0, 0], X[y_means == 0, 1], s = 50, c = 'pink')
+    plt.scatter(X[y_means == 1, 0], X[y_means == 1, 1], s = 50, c = 'yellow')
+    plt.scatter(X[y_means == 2, 0], X[y_means == 2, 1], s = 50, c = 'cyan')
+    plt.scatter(X[y_means == 3, 0], X[y_means == 3, 1], s = 50, c = 'magenta')
+    plt.scatter(X[y_means == 4, 0], X[y_means == 4, 1], s = 50, c = 'orange')
+    plt.scatter(X[y_means == 5, 0], X[y_means == 5, 1], s = 50, c = 'blue')
+    plt.scatter(X[y_means == 6, 0], X[y_means == 6, 1], s = 50, c = 'red')
+    plt.scatter(X[y_means == 7, 0], X[y_means == 7, 1], s = 50, c = 'black')
+    plt.scatter(X[y_means == 8, 0], X[y_means == 8, 1], s = 50, c = 'violet')
+    plt.xlabel('Annual Income in (1k)')
+    plt.ylabel('Spending Score from 1-100')
+    plt.title('Clusters of data')
+    plt.show()

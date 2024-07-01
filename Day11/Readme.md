@@ -4,6 +4,8 @@
     - **Limitations of Other Methods**: Partitioning (e.g., K-Means) and hierarchical clustering struggle with non-convex shapes and noise.
 
 #### Key Parameters
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/bb9fcabc-59ca-4e66-af6c-a1041666da7b)
+
     1. **eps (Epsilon)**:
        - Defines the radius of the neighborhood around a point.
        - Too small: Many outliers.
@@ -20,7 +22,8 @@
     1. **Core Point**: Has at least MinPts points within eps.
     2. **Border Point**: Has fewer than MinPts within eps but is a neighbor of a core point.
     3. **Noise or Outlier**: Neither a core nor a border point.
-    
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/cb4060ef-3a80-4a93-9d32-5714bf5bc355)
+
  #### Steps in DBSCAN Algorithm
     1. **Identify Core Points**:
        - Find neighbors within eps for each point.
@@ -35,6 +38,7 @@
        - Visit all points in the dataset.
        - Points not belonging to any cluster are marked as noise.
 
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/ffb00c33-f621-4441-9f9d-fee1c919e5f7)
 
 ### Pseudocode for DBSCAN
     DBSCAN(dataset, eps, MinPts){
@@ -72,6 +76,7 @@
 
 
 ### Association Rule Mining
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/e8ee8cf4-8a3a-41ff-8a62-1cd33345eebe)
 
     1. **Introduction**
        - **Association Rule Mining**: A method to find relationships between variables in large datasets. It is used in various fields, including market basket analysis, bioinformatics, and web usage mining.
@@ -80,6 +85,7 @@
          - **Support**: The frequency or occurrence of an itemset in the dataset.
          - **Confidence**: The likelihood that an item Y is also purchased when item X is purchased.
          - **Lift**: The ratio of the observed support to that expected if X and Y were independent.
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/9e02bf4f-bc88-4513-bc50-9522c58b86de)
     
     2. **Frequent Itemset Mining**
        - **Objective**: Identify itemsets that appear frequently in the dataset.
@@ -97,7 +103,13 @@
        - **Confidence**: `Confidence(X -> Y)` is the proportion of transactions that contain X which also contain Y.
         
        - **Lift**: `Lift(X -> Y)` measures how much more often X and Y occur together than expected if they were statistically independent.
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/7f9f130c-5cb5-47a8-b314-a2474ada6dba)
 
+### Apriri Algorithm
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/d684043c-0e94-4ab6-a782-6dad9b6ba0a0)
+
+### FP Growth Algorithm
+![image](https://github.com/Kiranwaghmare123/PG-DBDA-MAR2024/assets/72081819/d34725ba-8250-4e32-9f9d-f0170f833cb4)
 
 ### Visualize Rules
     def inspect(results):

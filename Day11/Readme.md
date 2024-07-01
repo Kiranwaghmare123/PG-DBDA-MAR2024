@@ -62,3 +62,10 @@
     print("Confidence: " + str(item[2][0][2]))
     print("Lift: " + str(item[2][0][3]))
     print("=====================================")
+
+# EX 1:
+
+    dataset = pd.DataFrame({
+        'Transaction': [1, 1, 1, 2, 2, 3, 3, 3],
+        'Item': ['Milk', 'Bread', 'Butter', 'Bread', 'Butter', 'Milk', 'Bread', 'Butter']
+    })

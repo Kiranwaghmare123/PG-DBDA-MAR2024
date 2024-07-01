@@ -1,3 +1,41 @@
+#### DBSCAN Algorithm
+    - **Non-Spherical Clusters**: Effective for clusters of arbitrary shapes.
+    - **Noise Handling**: Robust against noise and outliers.
+    - **Limitations of Other Methods**: Partitioning (e.g., K-Means) and hierarchical clustering struggle with non-convex shapes and noise.
+
+#### Key Parameters
+    1. **eps (Epsilon)**:
+       - Defines the radius of the neighborhood around a point.
+       - Too small: Many outliers.
+       - Too large: Merged clusters.
+       - Determination: Use the k-distance graph.
+    
+    2. **MinPts (Minimum Points)**:
+       - Minimum number of points within the eps radius.
+       - Larger datasets require larger MinPts.
+       - General Rule: MinPts ≥ D + 1 (D = number of dimensions).
+       - Minimum value: At least 3.
+
+#### Types of Data Points in DBSCAN
+    1. **Core Point**: Has at least MinPts points within eps.
+    2. **Border Point**: Has fewer than MinPts within eps but is a neighbor of a core point.
+    3. **Noise or Outlier**: Neither a core nor a border point.
+    
+ #### Steps in DBSCAN Algorithm
+    1. **Identify Core Points**:
+       - Find neighbors within eps for each point.
+       - Mark points with ≥ MinPts neighbors as core points.
+       
+    2. **Cluster Assignment**:
+       - For each core point not already in a cluster, create a new cluster.
+       - Recursively find all density-connected points and assign them to the cluster.
+       - Density-Connected: Points connected through a chain of core points.
+    
+    3. **Iterate Through Points**:
+       - Visit all points in the dataset.
+       - Points not belonging to any cluster are marked as noise.
+
+
 ### Pseudocode for DBSCAN
     DBSCAN(dataset, eps, MinPts){
         C = 1  # Initialize cluster index

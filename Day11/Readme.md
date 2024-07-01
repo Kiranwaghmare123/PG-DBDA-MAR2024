@@ -71,6 +71,34 @@
     plt.show()
 
 
+### Association Rule Mining
+
+    1. **Introduction**
+       - **Association Rule Mining**: A method to find relationships between variables in large datasets. It is used in various fields, including market basket analysis, bioinformatics, and web usage mining.
+       - **Key Terms**:
+         - **Itemset**: A collection of one or more items.
+         - **Support**: The frequency or occurrence of an itemset in the dataset.
+         - **Confidence**: The likelihood that an item Y is also purchased when item X is purchased.
+         - **Lift**: The ratio of the observed support to that expected if X and Y were independent.
+    
+    2. **Frequent Itemset Mining**
+       - **Objective**: Identify itemsets that appear frequently in the dataset.
+       - **Algorithms**:
+         - **Apriori Algorithm**: Iteratively identifies frequent itemsets. It is based on the principle that if an itemset is frequent, all its subsets are also frequent.
+         - **FP-Growth Algorithm**: Uses a tree structure to encode the dataset and extract frequent itemsets directly.
+    
+    3. **Generating Association Rules**
+       - **Objective**: Generate rules that predict the occurrence of an item based on the occurrences of other items.
+       - **Rule Generation**: From the frequent itemsets, rules of the form `X -> Y` are generated, where X and Y are itemsets.
+    
+    4. **Evaluation Metrics**
+       - **Support**: `Support(X)` is the proportion of transactions in the dataset in which the itemset X appears.
+        
+       - **Confidence**: `Confidence(X -> Y)` is the proportion of transactions that contain X which also contain Y.
+        
+       - **Lift**: `Lift(X -> Y)` measures how much more often X and Y occur together than expected if they were statistically independent.
+
+
 ### Visualize Rules
     def inspect(results):
         lhs         = [tuple(result[2][0][0])[0] for result in results]
